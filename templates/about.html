@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>About - E-Performance AI</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">PERFORM.AI</div>
+        <div>
+            <a href="/">Home</a>
+            <a href="/predict">Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 style="color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 10px;">Project Overview</h1>
+        
+        <section style="margin-top: 20px;">
+            <h3>Objectives</h3>
+            <p>This project aims to leverage Machine Learning (Random Forest Regressor) to predict the productivity of workers in the garment industry. By analyzing historical data, we provide insights into how variables like team size, targeted goals, and overtime affect actual output.</p>
+        </section>
+
+        <section style="margin-top: 30px;">
+            <h3>Key Insights</h3>
+            <ul style="color: #888; line-height: 2;">
+                <li><strong>Data-Driven:</strong> Analysis of 1,200+ production records.</li>
+                <li><strong>Accuracy:</strong> Uses SMV (Standard Minute Value) to calculate precise effort.</li>
+                <li><strong>Optimization:</strong> Identifies "Idle Men" and "Idle Time" bottlenecks.</li>
+            </ul>
+        </section>
+
+        <div style="margin-top: 40px; padding: 20px; background: #252836; border-radius: 10px; border-left: 4px solid var(--accent);">
+            <p style="margin: 0; font-size: 0.9rem;">Developed for the Internship Performance Prediction Module.</p>
+        </div>
+        
+        <br>
+        <a href="/" style="color: white; text-decoration: none;">← Back to Home</a>
+    </div>
+</body>
+</html>

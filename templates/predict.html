@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dashboard | Input</title>
+</head>
+<body>
+    <nav><div class="logo">PERFORM.AI</div><a href="/">Back</a></nav>
+    <div class="container">
+        <h2 style="margin-top:0">Operational Metrics</h2>
+        <form action="/submit" method="POST">
+            <div class="form-grid">
+                <div class="form-group"><label>Quarter</label><select name="quarter"><option>Quarter1</option><option>Quarter2</option><option>Quarter3</option><option>Quarter4</option><option>Quarter5</option></select></div>
+                <div class="form-group"><label>Department</label><select name="dept"><option value="sweing">Sewing</option><option value="finishing">Finishing</option></select></div>
+                <div class="form-group"><label>Day</label><select name="day"><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Saturday</option><option>Sunday</option></select></div>
+                <div class="form-group"><label>Team No.</label><input type="number" name="team" min="1" required></div>
+                <div class="form-group"><label>Target (0-1)</label><input type="number" step="0.01" name="target" min="0" max="1" required></div>
+                <div class="form-group"><label>SMV</label><input type="number" step="0.01" name="smv" min="0" required></div>
+                <div class="form-group"><label>WIP</label><input type="number" name="wip" min="0"></div>
+                <div class="form-group"><label>Over Time</label><input type="number" name="ot" min="0" required></div>
+                <div class="form-group"><label>Incentive</label><input type="number" name="inc" min="0" required></div>
+                <div class="form-group"><label>Idle Time</label><input type="number" name="idle_t" min="0" required></div>
+                <div class="form-group"><label>Idle Men</label><input type="number" name="idle_m" min="0" required></div>
+                <div class="form-group"><label>Style Changes</label><input type="number" name="style" min="0" required></div>
+                <div class="form-group"><label>No. Workers</label><input type="number" step="0.1" name="workers" min="1" required></div>
+                <div class="form-group"><label>Month (1-12)</label><input type="number" name="month" min="1" max="12" required></div>
+            </div>
+            <button type="submit">Analyze Productivity</button>
+        </form>
+    </div>
+</body>
+</html>
