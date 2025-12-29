@@ -86,6 +86,14 @@ http://127.0.0.1:5000
 
 ---
 
+## 📸 Output Images
+
+<img width="1917" height="922" alt="image 1" src="https://github.com/user-attachments/assets/b0ef51e2-d3ed-4ec4-809b-5377217fed21" />
+<img width="1917" height="924" alt="Image 2" src="https://github.com/user-attachments/assets/bd8f6910-a185-405a-a269-7a4fed6fd22b" />
+<img width="857" height="872" alt="Image 3" src="https://github.com/user-attachments/assets/94bd05c4-68d1-4202-a4d2-7ac4e1773676" />
+
+---
+
 ## 📈 Productivity Categories
 
 | Category | Efficiency Score |
